@@ -8,9 +8,9 @@ export PATH=${CLANG_PATH}/bin:${PATH}
 export CLANG_TRIPLE=aarch64-linux-gnu-
 export ARCH=arm64
 export SUBARCH=arm64
-export KERNEL_DEFCONFIG=vendor/lahaina-qgki_defconfig
+export KERNEL_DEFCONFIG=vendor/holi-qgki_defconfig
 export LLVM_VERSION=13
-export SETUP_KERNELSU=true  # Enable if you want KernelSU
+export SETUP_KERNELSU=false  # Enable if you want KernelSU. I have it disabled for now, since we do need a specialized version for GKI1.0 devices.
 export KernelSU_TAG=main    # Select KernelSU tag or branch
 # Custom Keystore hash and size for KernelSU Manager
 # Use `ksud debug get-sign <apk_path>` to get them
